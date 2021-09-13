@@ -1,6 +1,8 @@
 # Pump it Up: Data Mining the Water Table
 ##### _HOSTED BY DRIVENDATA_
 
+### username `moracse_170446l`
+
 ## EDA
 - Since the data set contains `38` features, `pandas_profiling`  was used for explore the data easily. `output_EDA.html` contains the generarted profile report. This report contains a complete analysis of data including distribution plots, correlation heatmaps, pairplots etc.  
 - An imbalance in the data was identified. The classes (labels) don't have an even distribution. Therefore `F1 score` was selected as the most suitable metric to evaluate. 
@@ -38,8 +40,8 @@
 - Parameters with best scores where used on the final model.
 
 #### Feature Importance
-- Feature importance checked and used to improve the model. Some features with low scores were removed.
-- Dimentionaly Reduction was not a huge concern, since the dataset is of reasonable size. 
+- Feature importance was checked and used to improve the model. Some features with low scores were removed.
+- Dimensionality reduction was not a huge concern, since the dataset is of reasonable size. 
 
 ## Submissions
 
