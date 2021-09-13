@@ -10,13 +10,13 @@
 |32259|22824|4317|
 
 - Feature with `missing` values and `zero` values were indentified.
-- Categorical columns with `high cardinality` and `high correlation`were identified. 
+- Categorical columns with `high cardinality` were identified. 
+- Categorical columns with `high correlation `were identified.
 
 ## Preprocessing
 
 #### Missing Values and Zero Values
-1. Missing values and zero values of `funder` and `installer` were filled with `Other` category
-2. Both `funder` and `installer` where identified as important features after exploring their class label distributions.
+1. Both `missing` values and `zero` values of `permit`, `funder` and `installer` were filled.
 2. `scheme_name` was dropped because it has `28166` (higher than others) missing values.
 
 ## Feature selection
@@ -25,7 +25,7 @@
 - `wpt_name` and `subvillage` were dropped due of high cardinality.
 
 #### High correlation
-- Some of highly where identified. 
+- Some highly correlated features were identified and some were droped. 
 
 
 ## Model Selection
