@@ -20,8 +20,10 @@
 
 #### Handling Missing Values, Zero Values and Outliers
 1. Both `missing` values and `zero` values of `permit`, `funder` and `installer` were filled.
-2. `scheme_name` was dropped because it has `28166` (higher than others) missing values.
-3. `zero` values (outliers) of  `longitude` were filled with median value.
+2. `zero` values (outliers) of  `longitude` were filled with median value.
+3. `zero` values (outliers) of  `construction_year` were filled with median values by grouping.
+4. `scheme_name` was dropped because it has `28166` (training set) missing values.
+5. `amount_tsh` , `num_private` and `population` were dropped because they contain too many `zero` values.
 
 #### Creating New Features
 
@@ -35,15 +37,24 @@
 
 #### High Cardinality
 - `wpt_name` and `subvillage` were dropped due of high cardinality.
+  * `wpt_name`: 37400 distinct values.
+  * `subvillage`: 19287 distinct values
 
 #### High Correlation
 - Some highly correlated features were identified and some were droped.
+  *  `extraction_type_group`, `extraction_type` and `extraction_type_class`
+  *  `management_group` and `management`
+  *  `payment` and `payment_type`
+  *  `water_quality` and `quality_group`
+  *  `quantity` and `quantity_group`
+  *  `source_type`, `source` and `source_class`
+  *  `waterpoint_type` and `waterpoint_type_group`
 
 ## Model Selection
 
 - `XGBoost` was selected after comparing baseline models of `XGBoost` and `Randomforest`. 
 
-#### Hyperparameter Optimizarion
+#### Hyperparameter Optimization
 - `RandomeSearchCV` was used for hyperparamter tuning. 
 - Parameters with best scores were used on the final model.
 - Different metrics [ `F1 score`, `ROC AUC`] were used to check the perfomance.
