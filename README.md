@@ -58,5 +58,8 @@
 | ------ | ------ | ------ | ------ |
 | 0.8102 | 2259 | 12381| Sept. 14, 2021 |
 
-![alt text](https://github.com/kavindaperera/pump-it-up-170446l/blob/main/submission_proof.PNG?raw=true)
+![best submission](https://github.com/kavindaperera/pump-it-up-170446l/blob/main/submission_proof.PNG?raw=true)
+
+![all submissions](https://github.com/kavindaperera/pump-it-up-170446l/blob/main/submissions.PNG?raw=true)
+
 
