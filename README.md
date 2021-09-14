@@ -40,13 +40,12 @@
 
 ## Model Selection
 
-- `XGBoost` was selected after a comparing baseline models of XGBoost and Randomforest. 
-- `XGBoost` is known to perform well in imbalance classification. 
+- `XGBoost` was selected after comparing baseline models of `XGBoost` and `Randomforest`. 
 
 #### Hyperparameter Optimizarion
 - `RandomeSearchCV` was used for hyperparamter tuning. 
 - Parameters with best scores were used on the final model.
-- Different metrics [ `F1 score`, `AUC`] were used to check the perfomance.
+- Different metrics [ `F1 score`, `ROC AUC`] were used to check the perfomance.
 
 #### Feature Importance
 - Feature importance was used to compare the relative importance of the selected features. Some features with low scores were removed to improve the model.
