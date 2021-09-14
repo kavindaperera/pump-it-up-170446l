@@ -11,9 +11,9 @@
 | :---: | :---: |  :---:|
 |32259|22824|4317|
 
-- Features with `missing` values and `zero` values were indentified.
-- Categorical columns with `high cardinality` were identified. 
-- Categorical columns with `high correlation `were identified.
+- Features with `missing` values and `zero` values were identified.
+- Categorical features with `high cardinality` were identified. 
+- Features with `high correlation `were identified.
 
 ## Preprocessing and Feature Engineering
 
