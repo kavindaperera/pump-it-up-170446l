@@ -19,7 +19,7 @@
 ## Preprocessing and Feature Engineering
 
 #### Handling Missing Values, Zero Values and Outliers
-1. Both `missing` values and `zero` values of `permit`, `funder` and `installer` were filled.
+1. `missing` values of `permit`, `funder` and `installer` were filled.
 2. `zero` values (outliers) of  `longitude` were filled with median value. `0` is not possible in Tanzania.
 3. `zero` values (outliers) of  `construction_year` were filled with median values by grouping.
 4. `scheme_name` was dropped because it has `28166` (training set) missing values.
