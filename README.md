@@ -6,7 +6,7 @@
 ## EDA
 - Since the data set contains many features, `pandas_profiling`  was used to explore the data set. 
 - The `eda_output.html` file contains the generated Profiling Report. This report contains a complete analysis of data including distribution plots, correlation heatmaps, pairplots etc.  
-- An imbalance in the data was identified. The classes (labels) don't have an even distribution. Therefore  `F1 score` and `ROC AUC` was selected as the most suitable metric to evaluate. 
+- An imbalance in the data was identified. The classes (labels) don't have an even distribution. Therefore  `F1 score` and `ROC AUC` was selected as the most suitable metrics to evaluate. 
 
 | functional | non functional | functional needs repair |
 | :---: | :---: |  :---:|
@@ -20,7 +20,7 @@
 
 #### Handling Missing Values, Zero Values and Outliers
 1. `missing` values of `permit`, `funder` and `installer` were filled.
-2. `zero` values (outliers) of  `longitude` were filled with median value. `0` is not possible in Tanzania.
+2. `zero` values (outliers) of  `longitude` and `gps_height` were filled with mean value grouped by `region_code`. `0` values are not possible in Tanzania.
 3. `zero` values (outliers) of  `construction_year` were filled with median values by grouping.
 4. `scheme_name` was dropped because it has `28166` (training set) missing values.
 5. `amount_tsh` , `num_private` and `population` were dropped because they contain too many `zero` values.
@@ -65,12 +65,13 @@
 
 ## Submissions
 
-| BEST | CURRENT RANK | # COMPETITORS | Date |
+| BEST | CURRENT RANK | # COMPETITORS | DATE |
 | ------ | ------ | ------ | ------ |
-| 0.8102 | 2259 | 12381| Sept. 14, 2021 |
+| 0.8111 | 2199 | 12408 |  Sept. 14, 2021 UTC. |
 
 ![best submission](https://github.com/kavindaperera/pump-it-up-170446l/blob/main/submission_proof.PNG?raw=true)
 
 ![all submissions](https://github.com/kavindaperera/pump-it-up-170446l/blob/main/submissions.PNG?raw=true)
 
 
+[competition link](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/)
