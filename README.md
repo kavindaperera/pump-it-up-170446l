@@ -4,8 +4,9 @@
 ### username `moracse_170446l`
 
 ## EDA
-- Since the data set contains `38` features, `pandas_profiling`  was used to explore the data set. The `eda_output.html` file contains the generarted Profile Report. This report contains a complete analysis of data including distribution plots, correlation heatmaps, pairplots etc.  
-- An imbalance in the data was identified. The classes (labels) don't have an even distribution. Therefore `F1 score` was selected as the most suitable metric to evaluate. 
+- Since the data set contains `38` features, `pandas_profiling`  was used to explore the data set. 
+- The `eda_output.html` file contains the generated Profile Report. This report contains a complete analysis of data including distribution plots, correlation heatmaps, pairplots etc.  
+- An imbalance in the data was identified. The classes (labels) don't have an even distribution. Therefore  `F1 score` and `ROC AUC` was selected as the most suitable metric to evaluate. 
 
 | functional | non functional | functional needs repair |
 | :---: | :---: |  :---:|
