@@ -19,19 +19,21 @@
 ## Preprocessing and Feature Engineering
 
 #### Handling Missing Values, Zero Values and Outliers
-1. `missing` values of `permit`, `funder` and `installer` were filled.
+1. `missing` values of `permit`, `public meeting`, `funder` and `installer` were handled.
 2. `zero` values (outliers) of  `longitude` and `gps_height` were filled with mean value grouped by `region_code`. `0` values are not possible in Tanzania.
 3. `zero` values (outliers) of  `construction_year` were filled with median values by grouping.
 4. `scheme_name` was dropped because it has `28166` (training set) missing values.
 5. `amount_tsh` , `num_private` and `population` were dropped because they contain too many `zero` values.
+6. Some spelling mistakes in `installer` were identified and handled.
 
 #### Creating New Features
 
 - Two new features `year_recorded` and `month_recorded` were created using `date_recorded`. `date_recorded` was dropped. 
 
-#### Label Encoding
+#### Encoding
 
-- Label encoding was used on categorical variables and class labels.
+- Label encoding was used on categorical variables.
+- Label encoding was used on class labels.
 
 ## Feature Selection
 
@@ -67,7 +69,7 @@
 
 | BEST | CURRENT RANK | # COMPETITORS | DATE |
 | :------: | :------: | :------: | :------: |
-| 0.8111 | 2199 | 12408 |  Sept. 14, 2021 UTC. |
+| 0.8162 | 1718 | 12416 |  Sept. 15, 2021 UTC. |
 
 ![best submission](https://github.com/kavindaperera/pump-it-up-170446l/blob/main/submission_proof.PNG?raw=true)
 
