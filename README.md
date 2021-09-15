@@ -78,7 +78,8 @@
 
 ## For More Information
 
-See the full EDA in [eda_output.html](./eda_output.html)
-See the full training process in the [Jupyter Notebook](./pump-it-up-notebook-xgboost.ipynb)
+See the full EDA in [eda_output.html](./eda_output.html).
+
+See the full training process in the [Jupyter Notebook](./pump-it-up-notebook-xgboost.ipynb).
 
 
