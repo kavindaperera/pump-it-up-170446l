@@ -1,12 +1,12 @@
-# Pump it Up: Data Mining the Water Table
-##### _HOSTED BY DRIVENDATA_
+# Pump it Up: Data Mining the Water Table 
+##### _HOSTED BY DRIVENDATA_ 
+[competition link](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/)
 
 ### username `moracse_170446l`
 
 ## EDA
-- Since the data set contains many features, `pandas_profiling`  was used to explore the data set. 
-- The `eda_output.html` file contains the generated Profiling Report. This report contains a complete analysis of data including distribution plots, correlation heatmaps, pairplots etc.  
-- An imbalance in the data was identified. The classes (labels) don't have an even distribution. Therefore  `F1 score` and `ROC AUC` was selected as the most suitable metrics to evaluate. 
+- First, `pandas_profiling`  was used to explore the data set. The `eda_output.html` file contains the generated Profiling Report. This report contains a complete analysis of data including distribution plots, correlation heatmaps, pairplots etc.  
+- An imbalance in the data was identified. The classes (multiclass) don't have an even distribution. Therefore  `Weighted F1-score` and `Weighted AUC` was selected as the most suitable metrics to evaluate. 
 
 | functional | non functional | functional needs repair |
 | :---: | :---: |  :---:|
@@ -57,7 +57,7 @@
 #### Hyperparameter Optimization
 - `RandomeSearchCV` was used for hyperparamter tuning. 
 - Parameters with best scores were used on the final model.
-- Different metrics [ `F1 score`, `ROC AUC`] were used to check the perfomance.
+- Different metrics [ `Weighted F1 score`, `Weighted ROC AUC`] were used to check the perfomance.
 
 #### Feature Importance
 - Feature importance was used to compare the relative importance of the selected features. Some features with low scores were removed to improve the model.
@@ -66,7 +66,7 @@
 ## Submissions
 
 | BEST | CURRENT RANK | # COMPETITORS | DATE |
-| ------ | ------ | ------ | ------ |
+| :------: | :------: | :------: | :------: |
 | 0.8111 | 2199 | 12408 |  Sept. 14, 2021 UTC. |
 
 ![best submission](https://github.com/kavindaperera/pump-it-up-170446l/blob/main/submission_proof.PNG?raw=true)
@@ -74,4 +74,4 @@
 ![all submissions](https://github.com/kavindaperera/pump-it-up-170446l/blob/main/submissions.PNG?raw=true)
 
 
-[competition link](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/)
+
