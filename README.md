@@ -16,7 +16,7 @@
 - Features with `high correlation `were identified.
 - Distributions and Outliers of data were analysed using histograms.
 
-## Preprocessing and Feature Engineering
+## Preprocessing and  Feature Engineering
 
 #### Handling Missing Values, Zero Values and Outliers
 1. `missing` values of `permit`, `public meeting`, `funder` and `installer` were handled.
@@ -26,14 +26,17 @@
 5. `amount_tsh` , `num_private` and `population` were dropped because they contain too many `zero` values.
 6. Some spelling mistakes in `installer` were identified and handled.
 
-#### Creating New Features
+#### Creating Features
 
 - Two new features `year_recorded` and `month_recorded` were created using `date_recorded`. `date_recorded` was dropped. 
 
-#### Encoding
+#### Feature Encoding
 
 - Label encoding was used on categorical variables.
 - Label encoding was used on class labels.
+
+#### Feature scaling
+- `Min-Max normalization` was tried, but not used on the final model. 
 
 ## Feature Selection
 
@@ -43,7 +46,7 @@
   * `subvillage`: 19287 distinct values
 
 #### High Correlation
-- Some highly correlated features were identified and some were droped.
+- Some highly correlated features were identified and less informative features were droped.
   *  `extraction_type_group`, `extraction_type` and `extraction_type_class`
   *  `management_group` and `management`
   *  `payment` and `payment_type`
