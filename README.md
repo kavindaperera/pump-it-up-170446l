@@ -5,7 +5,7 @@
 ### username `moracse_170446l`
 
 ## EDA
-- First, `pandas_profiling`  was used to explore the data set. The `eda_output.html` file contains the generated Profiling Report. This report contains a complete analysis of data including distribution plots, correlation heatmaps, pairplots etc.  
+- First, `pandas_profiling`  was used to explore the data set. The [eda_output.html](./eda_output.html) file contains the generated Profiling Report. This report contains a complete analysis of data including distribution plots, correlation heatmaps, pairplots etc.  
 - An imbalance in the data was identified. The classes (multiclass) don't have an even distribution. Therefore  `Weighted F1-score` and `Weighted AUC` was selected as the most suitable metrics to evaluate. 
 
 | functional | non functional | functional needs repair |
@@ -75,5 +75,11 @@
 
 ![all submissions](https://github.com/kavindaperera/pump-it-up-170446l/blob/main/submissions.PNG?raw=true)
 
+
+## For More Information
+
+See the full EDA in [eda_output.html](./eda_output.html).
+
+See the full training process in the [Jupyter Notebook](./pump-it-up-notebook-xgboost.ipynb).
 
 
