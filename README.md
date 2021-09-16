@@ -6,15 +6,15 @@
 
 ## EDA
 - First, `pandas_profiling`  was used to explore the data set. The [eda_output.html](./eda_output.html) file contains the generated Profiling Report. This report contains a complete analysis of data including distribution plots, correlation heatmaps, pairplots etc.  
-- An imbalance in the data was identified. The classes (multiclass) don't have an even distribution. Therefore  `Weighted F1-score` and `Weighted AUC` was selected as the most suitable metrics to evaluate. 
+- An imbalance in the dataset was identified. The class labels (multiclass) don't have an even distribution. (Therefore  `Weighted F1-score` and `Weighted AUC` was selected as the most suitable metrics to evaluate.)
 
 | functional | non functional | functional needs repair |
 | :---: | :---: |  :---:|
 |32259|22824|4317|
-
 - Features with `missing` values and `zero` values were identified.
 - Categorical features with `high cardinality` were identified. 
 - Features with `high correlation `were identified.
+- Distributions and Outliers of data were analysed using histograms.
 
 ## Preprocessing and Feature Engineering
 
