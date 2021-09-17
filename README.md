@@ -1,8 +1,11 @@
 # Pump it Up: Data Mining the Water Table 
-##### _HOSTED BY DRIVENDATA_ 
-[competition link](https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table/)
 
-### username `moracse_170446l`
+Github Repository Link: https://github.com/kavindaperera/pump-it-up-170446l
+
+### DrivenData Username: `moracse_170446l`
+### Name:  `T. K. P. Perera`
+### Index No: `170446L`
+
 
 ## EDA
 - First, `pandas_profiling`  was used to explore the data set. The [eda_output.html](./eda_output.html) file contains the generated Profiling Report. This report contains a complete analysis of data including distribution plots, correlation heatmaps, pairplots etc.  
@@ -36,7 +39,7 @@
 - Label encoding was used on class labels.
 
 #### Feature scaling
-- `Min-Max normalization` was tried, but not used on the final model. 
+- `Min-Max normalization` was tried, but was not used on the final model. 
 
 ## Feature Selection
 
@@ -70,7 +73,7 @@
 
 ## Submissions
 
-| BEST | CURRENT RANK | # COMPETITORS | DATE |
+| BEST | CURRENT RANK | # COMPETITORS | SUBMISSION DATE |
 | :------: | :------: | :------: | :------: |
 | 0.8162 | 1718 | 12416 |  Sept. 15, 2021 UTC. |
 
